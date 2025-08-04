@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --cor-fundo: #000000;
+    --cor-principal: #0a0a0a;
+    --cor-secundaria: #111111;
+    --cor-destaque: #00ff00;
+    --cor-texto: #00ff00;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Press Start 2P', monospace;
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid var(--cor-destaque);
+    box-shadow: 0 0 15px var(--cor-destaque);
+}
+
+h1 {
+    color: var(--cor-destaque);
+    font-size: 1rem;
+}
+
+button {
+    background-color: transparent;
+    color: var(--cor-texto);
+    border: 2px solid var(--cor-destaque);
+    border-radius: 0;
+    padding: 15px;
+    font-family: 'Press Start 2P', monospace;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo);
+}
+
+.caixa-resultado {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    white-space: pre-wrap;
+    display: block;
+    text-align: left;
+}
+
+
+canvas#matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
